@@ -156,6 +156,7 @@ nav li a {
 }
 
 /* SECTION FUNNY VIDEOS STYLES */
+
 .funny-videos {
     text-align: center;
     margin-top: 120px;
@@ -163,8 +164,36 @@ nav li a {
 
 .funny-videos-title {
     margin-bottom: 48px;
+    
 }
-
+.play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60px;
+    height: 60px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .play-button:before {
+    content: '';
+    border-style: solid;
+    border-width: 12px 0 12px 20px;
+    border-color: transparent transparent transparent #fff;
+  }
+  
+  .card:hover .play-button {
+    opacity: 1;
+  }
+  
 .funny-videos-title h3 {
     color: #0B0223;
     font-size: 3rem;
@@ -189,10 +218,14 @@ nav li a {
     display: flex;
     justify-content: center;
     gap: 24px;
+    
 }
 
 .card {
     width: 340px;
+    position: relative;
+    
+  display: inline-block;
 }
 
 /* play-instantly styles */
