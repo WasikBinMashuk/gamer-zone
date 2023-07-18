@@ -10,7 +10,8 @@
 
     --font-size: 20px;
 }
-.funny-color{
+
+.funny-color {
     background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
     background-clip: border-box;
     -webkit-background-clip: text;
@@ -95,7 +96,8 @@ nav li a {
     padding-right: 240px;
 
 }
-.banner-img{
+
+.banner-img {
     width: 100%;
 }
 
@@ -175,7 +177,8 @@ nav li a {
     font-weight: 400;
     padding-top: 24px;
 }
-.funny-cards p{
+
+.funny-cards p {
     color: #534C64;
     font-size: 1.25rem;
     font-weight: 500;
@@ -187,9 +190,54 @@ nav li a {
     justify-content: center;
     gap: 24px;
 }
-.card{
+
+.card {
     width: 340px;
 }
+
+/* play-instantly styles */
+.play-instantly {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    margin: 120px 240px 120px 240px;
+}
+.play-instantly-left{
+    margin-left: 150px;
+}
+
+.play-instantly-left h3 {
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: right;
+}
+.play-instantly-left p {
+    color: #534C64;
+    font-size: 1.125rem;
+    font-weight: 400;
+    text-align: right;
+}
+/* .play-instantly-right{
+    
+} */
+.play-instantly-right-relative-image{
+    /* position: absolute;
+    top: 2050px;
+    right: 700px; */
+    position: relative;
+    bottom: 300px;
+    right: 150px;
+    height: 0px;
+}
+
+/* category-game-container */
+.category-game-container{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    margin: 190px 240px 120px 240px;
+}
+
 
 
 /* Responsive styles */
@@ -200,10 +248,11 @@ nav li a {
     nav,
     .banner,
     .banner-left,
-    .funny-cards {
+    .funny-cards,
+    .play-instantly {
         flex-direction: column;
     }
-    
+
     nav>ul {
         flex-direction: column;
         gap: 40px;
@@ -238,8 +287,32 @@ nav li a {
         width: 500px;
     }
 
-    .funny-cards{
+    .funny-cards {
         margin-left: 100px;
+    }
+    .play-instantly-left{
+        margin-left: 0px;
+        text-align: center;
+    }
+    .play-instantly-left h3 {
+        
+        text-align: center;
+    }
+    .play-instantly-left p {
+        
+        text-align: center;
+    }
+    .play-instantly-right-img{
+        width: 400px;
+    }
+    .play-instantly-right-relative-image{
+        max-width: 200px;
+        margin: auto;
+        bottom: 100px;
+        right: 100px;
+    }
+    .play-instantly-right-relative-img{
+        width: 200px;
     }
 }
 
