@@ -3,12 +3,13 @@
     margin: 0px;
     padding: 0px;
 }
+.none{
+    display: none;
+}
 
 :root {
     --primary-color: linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%);
     --secondary-color: #4EC5F7;
-
-    --font-size: 20px;
 }
 
 .funny-color {
@@ -313,6 +314,7 @@ nav li a {
     justify-content: center;
     align-items: center;
     height: 636px;
+    /* width: 100%; */
     background: #0B0223;
     color: white;
 }
@@ -421,27 +423,39 @@ nav li a {
 
     .banner {
         flex-direction: column-reverse;
+        /* border: 1px solid red; */
     }
 
     .banner-left {
-        width: 100%;
-        height: 700px;
+        /* width: 120%; */
+        max-width: 500px;
+        /* height: 700px; */
+        /* border: 1px solid red; */
     }
 
     .banner-imgage {
         padding-right: 0px;
-        width: 90%;
+        /* width: 90%; */
 
     }
 
     .banner-img {
-        width: 500px;
+        width: 400px;
+        
+        /* margin-left: 5px; */
+        padding-left: 20px;
+    }
+
+    .funny-videos-title{
+        padding-left: 10px;
     }
 
     .funny-cards {
-        margin-left: 100px;
+        margin-left: 50px;
     }
 
+
+    
     .play-instantly-left {
         margin-left: 0px;
         text-align: center;
@@ -453,19 +467,20 @@ nav li a {
     }
 
     .play-instantly-left p {
-
+        padding-top: 20px;
         text-align: center;
     }
 
     .play-instantly-right-img {
-        width: 400px;
+        width: 350px;
+        padding-top: 20px;
     }
 
     .play-instantly-right-relative-image {
         max-width: 200px;
         margin: auto;
         bottom: 100px;
-        right: 100px;
+        right: 120px;
     }
 
     .play-instantly-right-relative-img {
@@ -475,15 +490,16 @@ nav li a {
     .category-game-container {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        margin: 160px 0px 120px 0px;
+        margin: 190px 0px 120px 40px;
     }
 
     .games {
         width: 20px;
-        padding: 0px;
+        padding: 10px 0px;
     }
     .footer{
-        max-width: 500px;
+        /* max-width: 500px; */
+        width: 470px;
     }
     .footer-links {
         grid-template-columns: repeat(3, 1fr);
