@@ -94,7 +94,7 @@ nav li a {
     height: 700px;
 }
 
-.banner-imgage {
+.banner-image {
     padding-right: 240px;
 
 }
@@ -433,7 +433,7 @@ nav li a {
         /* border: 1px solid red; */
     }
 
-    .banner-imgage {
+    .banner-image {
         padding-right: 0px;
         /* width: 90%; */
 
@@ -518,4 +518,101 @@ nav li a {
 }
 
 /* Medium devices */
-@media screen and (min-width: 577px) and (max-width:960px) {}
+@media screen and (min-width: 577px) and (max-width:960px) {
+    nav,
+    .banner,
+    .banner-left,
+    .funny-cards,
+    .play-instantly,
+    .footer {
+        flex-direction: column;
+    }
+
+    nav>ul {
+        /* flex-direction: column; */
+        gap: 40px;
+        padding: 60px 0px;
+    }
+    /* nav li {
+        list-style: none;
+        margin: 0 10px;
+        
+    } */
+
+    #follow-us {
+        border-radius: 8px;
+        background: rgba(11, 2, 35, 0.10);
+        width: 200px;
+        padding: 5px;
+        margin: 0px;
+        text-align: center;
+    }
+
+    .banner-left {
+        /* width: 120%; */
+        /* max-width: 700px; */
+        /* height: 700px; */
+        /* border: 1px solid red; */
+        width: 700px;
+    }
+    .banner-image {
+        /* padding-right: 0px; */
+        /* width: 90%; */
+        /* padding-left: 180px; */
+        padding-right: 0px;
+    }
+
+    .banner-img {
+        /* width: 700px; */
+        
+        /* margin-left: 5px; */
+        /* padding-left: 20px; */
+        width: 500px;
+        padding: 0px;
+        /* padding-left: 200px; */
+    }
+
+    .funny-cards{
+        align-items: center;
+    }
+
+    .play-instantly{
+        margin: 150px 0px;
+    }
+    .play-instantly-left{
+        margin: 0px 0px 50px 0px;
+    }
+    .play-instantly-left h3 {
+        text-align: center;
+    }
+    
+    .play-instantly-left p {
+        padding-top: 30px;
+        text-align: center;
+    }
+    .play-instantly-right-img {
+        width: 500px;
+        padding-top: 20px;
+    }
+    .play-instantly-right-relative-image {
+        max-width: 200px;
+        margin: auto;
+        bottom: 200px;
+        right: 250px;
+    }
+
+    .category-game-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        margin: 250px 0px 120px 40px;
+    }
+
+    .games {
+        width: 20px;
+        padding: 10px 0px;
+    }
+
+    .footer{
+        padding: 30px;
+    }
+}
