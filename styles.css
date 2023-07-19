@@ -56,13 +56,14 @@ nav>ul {
 nav li {
     list-style: none;
     margin: 0 32px;
-    color: #3C354F;
-    font-size: 1.1rem;
-    font-weight: 500;
+    
 }
 
 nav li a {
     text-decoration: none;
+    color: #3C354F;
+    font-size: 1.1rem;
+    font-weight: 500;
 }
 
 #follow-us {
@@ -168,7 +169,7 @@ nav li a {
 }
 .play-button {
     position: absolute;
-    top: 50%;
+    top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 60px;
@@ -223,9 +224,13 @@ nav li a {
 
 .card {
     width: 340px;
+
     position: relative;
-    
-  display: inline-block;
+    display: inline-block;
+}
+.card>img:hover{
+    border: 2px solid #FF42A5;
+    border-radius: 20px;
 }
 
 /* play-instantly styles */
@@ -269,10 +274,13 @@ nav li a {
 
 /* category-game-container */
 .category-game-container {
-    display: grid;
+    /* display: grid;
     grid-template-columns: repeat(5, 1fr);
     justify-content: center;
-    align-items: center;
+    align-items: center; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     margin: 190px 240px 120px 240px;
 }
 
@@ -465,6 +473,7 @@ nav li a {
     }
 
     .category-game-container {
+        display: grid;
         grid-template-columns: repeat(2, 1fr);
         margin: 160px 0px 120px 0px;
     }
