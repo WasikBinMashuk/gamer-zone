@@ -3,7 +3,8 @@
     margin: 0px;
     padding: 0px;
 }
-.none{
+
+.none {
     display: none;
 }
 
@@ -57,7 +58,7 @@ nav>ul {
 nav li {
     list-style: none;
     margin: 0 32px;
-    
+
 }
 
 nav li a {
@@ -166,8 +167,9 @@ nav li a {
 
 .funny-videos-title {
     margin-bottom: 48px;
-    
+
 }
+
 /* .play-button {
     position: absolute;
     top: 45%;
@@ -195,15 +197,15 @@ nav li a {
   .card:hover .play-button {
     opacity: 1;
   } */
-  
-  
-  
-  .card img {
-    
+
+
+
+.card img {
+
     transition: transform 0.3s;
-  }
-  
-  .overlay {
+}
+
+.overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -216,15 +218,15 @@ nav li a {
     align-items: center;
     opacity: 0;
     transition: opacity 0.3s;
-  }
-  
-  .card:hover .overlay {
+}
+
+.card:hover .overlay {
     opacity: 1;
     /* border: 1px solid #FF42A5; */
     border-radius: 15px;
-  }
-  
-  .play-button {
+}
+
+.play-button {
     width: 60px;
     height: 60px;
     border: 3px solid #fff;
@@ -234,13 +236,15 @@ nav li a {
     align-items: center;
     font-size: 24px;
     color: #fff;
-  }
-  
-  .watch-now {
+}
+
+.watch-now {
     margin-top: 10px;
-    font-size: 16px;
+    font-size: 1.25rem;
+
+    font-weight: 600;
     color: #FF42A5;
-  }
+}
 
 .funny-videos-title h3 {
     color: #0B0223;
@@ -266,7 +270,7 @@ nav li a {
     display: flex;
     justify-content: center;
     gap: 24px;
-    
+
 }
 
 .card {
@@ -277,6 +281,7 @@ nav li a {
     /* position: relative;
     display: inline-block; */
 }
+
 /* .card>img:hover{
     border: 2px solid #FF42A5;
     border-radius: 20px;
@@ -489,12 +494,12 @@ nav li a {
 
     .banner-img {
         width: 400px;
-        
+
         /* margin-left: 5px; */
         padding-left: 20px;
     }
 
-    .funny-videos-title{
+    .funny-videos-title {
         padding-left: 10px;
     }
 
@@ -503,7 +508,7 @@ nav li a {
     }
 
 
-    
+
     .play-instantly-left {
         margin-left: 0px;
         text-align: center;
@@ -545,10 +550,12 @@ nav li a {
         width: 20px;
         padding: 10px 0px;
     }
-    .footer{
+
+    .footer {
         /* max-width: 500px; */
         width: 470px;
     }
+
     .footer-links {
         grid-template-columns: repeat(3, 1fr);
     }
@@ -567,6 +574,7 @@ nav li a {
 
 /* Medium devices */
 @media screen and (min-width: 577px) and (max-width:960px) {
+
     nav,
     .banner,
     .banner-left,
@@ -581,6 +589,7 @@ nav li a {
         gap: 40px;
         padding: 60px 0px;
     }
+
     /* nav li {
         list-style: none;
         margin: 0 10px;
@@ -603,6 +612,7 @@ nav li a {
         /* border: 1px solid red; */
         width: 700px;
     }
+
     .banner-image {
         /* padding-right: 0px; */
         /* width: 90%; */
@@ -612,7 +622,7 @@ nav li a {
 
     .banner-img {
         /* width: 700px; */
-        
+
         /* margin-left: 5px; */
         /* padding-left: 20px; */
         width: 500px;
@@ -620,28 +630,32 @@ nav li a {
         /* padding-left: 200px; */
     }
 
-    .funny-cards{
+    .funny-cards {
         align-items: center;
     }
 
-    .play-instantly{
+    .play-instantly {
         margin: 150px 0px;
     }
-    .play-instantly-left{
+
+    .play-instantly-left {
         margin: 0px 0px 50px 0px;
     }
+
     .play-instantly-left h3 {
         text-align: center;
     }
-    
+
     .play-instantly-left p {
         padding-top: 30px;
         text-align: center;
     }
+
     .play-instantly-right-img {
         width: 500px;
         padding-top: 20px;
     }
+
     .play-instantly-right-relative-image {
         max-width: 200px;
         margin: auto;
@@ -660,7 +674,7 @@ nav li a {
         padding: 10px 0px;
     }
 
-    .footer{
+    .footer {
         padding: 30px;
     }
 }
